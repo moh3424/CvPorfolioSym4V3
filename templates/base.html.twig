@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Bienvenue sur mon site!{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mohamed : Home</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="{{ asset('images/facone.ico') }}" />
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+    <!-- Gallery Lightbox -->
+    <link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="{{ asset('css/theme-color/purple-theme.css') }}" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="{{ asset('style.css') }}" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <!-- Poppins for Title -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+
+    {% block stylesheets %}{% endblock %}
+</head>
+
+<body>
+    {% block body %}{% endblock %}
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <!-- Slick slider -->
+    <script type="text/javascript" src="{{ asset('js/slick.min.js') }}"></script>
+    <!-- Filterable Gallery js -->
+    <script type="text/javascript" src="{{ asset('js/jquery.filterizr.min.js') }}"></script>
+    <!-- Gallery Lightbox -->
+    <script type="text/javascript" src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <!-- Featured Slider -->
+    <script type="text/javascript" src="{{ asset('js/typed.min.js') }}"></script>
+    <!-- On scroll JS  -->
+    <script src="{{ asset('js/jquery.appear.js') }}"></script>
+    <!-- Progress Bar -->
+    <script type="text/javascript" src="{{ asset('js/jquery.lineProgressbar.js') }}"></script>
+
+    <!-- Custom js -->
+    <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
+    {% block javascripts %}{% endblock %}
+</body>
+
+</html>
